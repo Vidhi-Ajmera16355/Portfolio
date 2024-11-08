@@ -8,11 +8,16 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_w8yq6s8', 'template_gq3q96d', form.current, {
-                publicKey: 'wcBU079ZU1BsnmpgB',
-            })
-        e.target.reset()
+            .sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            )
+            .then(() => e.target.reset())
+            .catch((error) => console.error('EmailJS Error:', error));
     };
+
 
     return (
         <section className="contact section" id="contact">
