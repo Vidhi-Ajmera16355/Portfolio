@@ -2,6 +2,7 @@ import React from 'react'
 import './skills.css'
 import Frontend from './Frontend'
 import Backend from './Backend'
+import ML from './ML.jsx'
 const Skills = () => {
     return (
         <section className="skills section" id="skills">
@@ -11,8 +12,9 @@ const Skills = () => {
             </span>
 
             <div className="skills__container container grid">
-                <Frontend/>
-               <Backend/>
+                <Frontend />
+                <Backend />
+                <ML />
             </div>
         </section>
     )

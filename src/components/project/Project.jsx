@@ -47,7 +47,7 @@ const projects = [
 
 function Project() {
     return (
-        <div className="projects-container">
+        <div className="projects-container" id='project'>
             <h2>Projects</h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (
