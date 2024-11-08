@@ -5,7 +5,8 @@ import chatImage1 from '../../assets/chat.png'
 import miniProject from '../../assets/miniProject.png'
 import weather from '../../assets/weather.png'
 import jobbler from '../../assets/jobbler.png'
-
+import canvas from '../../assets/handCanvas.jpg'
+import paint from '../../assets/paint.png'
 const projects = [
     {
         topic: 'Chat App',
@@ -25,12 +26,17 @@ const projects = [
         description: 'A description of project three.',
         image: weather,
     },
-    // {
-    //     topic: 'Project Four',
-    //     link: 'https://project-four.com',
-    //     description: 'A description of project four.',
-    //     image: 'https://via.placeholder.com/150',
-    // },
+    {
+        topic: 'E-commerce Website',
+        link: 'https://frontend-store-paints.vercel.app/',
+        description: 'E-commerce website of a paints store.',
+        image: paint,
+    },
+    {
+        topic: 'Hand Canvas',
+        description: 'A project related to Computer Vision Air Canvas.',
+        image: canvas,
+    },
     {
         topic: 'Early Seizure Detection',
         link: '',
