@@ -1,5 +1,5 @@
 // Project.jsx
-import React from 'react';
+import React, { useContext } from 'react';
 import './project.css';
 import chatImage1 from '../../assets/chat.png'
 import miniProject from '../../assets/miniProject.png'
@@ -7,6 +7,8 @@ import weather from '../../assets/weather.png'
 import jobbler from '../../assets/jobbler.png'
 import canvas from '../../assets/handCanvas.jpg'
 import paint from '../../assets/paint.png'
+import { ThemeContext } from '../../ThemeContext'
+
 const projects = [
     {
         topic: 'Chat App',
@@ -45,10 +47,11 @@ const projects = [
     },
 ];
 
+
 function Project() {
+    const { darkMode } = useContext(ThemeContext);
     return (
-        <div className="projects-container" id='project'>
-            <h2>Projects</h2>
+        <div className={`projects-container ${darkMode ? 'dark-theme' : ''}`} id='project'>            <h2>Projects</h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>

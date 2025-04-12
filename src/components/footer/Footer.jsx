@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './footer.css'
+import { ThemeContext } from '../../ThemeContext'
 
 const Footer = () => {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${darkMode ? 'dark-theme' : ''}`}>
       <div className="footer__container container">
         <h1 className="footer__title">Vidhi</h1>
 

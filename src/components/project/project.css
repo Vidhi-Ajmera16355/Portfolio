@@ -52,4 +52,16 @@
   .project-card a:hover {
     text-decoration: underline;
   }
-  
+  /* Add dark mode styles */
+.projects-container.dark-theme .project-card {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+.projects-container.dark-theme .project-card a {
+  color: #71c9f8;
+}
+
+.projects-container.dark-theme .project-card a:hover {
+  color: #4ab0f1;
+}

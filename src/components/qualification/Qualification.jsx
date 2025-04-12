@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './qualification.css'
-const Qualification = () => {
+import { ThemeContext } from '../../ThemeContext'
 
+const Qualification = () => {
     const [toggleState, setToggleState] = useState(1);
+    const { darkMode } = useContext(ThemeContext);
+
     const toggleTab = (index) => {
         setToggleState(index);
     }
 
-
     return (
-        <section className="qualification section" id="qualification">
-            <h2 className="section__title">Qualification</h2>
+        <section className={`qualification section ${darkMode ? 'dark-theme' : ''}`} id="qualification"><h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My personal Journey</span>
 
             <div className="qualification__container container">

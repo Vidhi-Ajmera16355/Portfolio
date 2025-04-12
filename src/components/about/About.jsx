@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './about.css';
 import AboutImg from '../../assets/about.jpg';
 import CV from '../../assets/Resume.pdf'
 import Info from './Info'
-const About = () => {
-    return (
-        <section className="about section" id="about">
-            <h2 className="section__title">
+import { ThemeContext } from '../../ThemeContext'
 
-            </h2>
+const About = () => {
+    const { darkMode } = useContext(ThemeContext);
+
+    return (
+        <section className={`about section ${darkMode ? 'dark-theme' : ''}`} id="about"><h2 className="section__title">
+
+        </h2>
             <span className="section__subtitle">
                 My Introduction
             </span>

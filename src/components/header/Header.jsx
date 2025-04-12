@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, {useContext, useState, useEffect } from 'react'
 import './header.css'
+import { ThemeContext } from '../../ThemeContext'
+
 const Header = () => {
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -136,10 +139,17 @@ const Header = () => {
           <i class="uil uil-times nav__close" onClick={() =>
             showMenu(!Toggle)}></i>
         </div>
+        {/* Add theme toggle button */}
 
-        <div className="nav__toggle" onClick={() =>
-          showMenu(!Toggle)}>
-          <i class="uil uil-apps"></i>
+        <div className="theme-toggle" onClick={toggleDarkMode}>
+          {darkMode ? (
+            <i className="uil uil-sun"></i>
+          ) : (
+            <i className="uil uil-moon"></i>
+          )}
+        </div>
+        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+          <i className="uil uil-apps"></i>
 
         </div>
       </nav>

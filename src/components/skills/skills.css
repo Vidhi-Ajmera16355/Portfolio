@@ -74,4 +74,8 @@
         font-size: var(--small-font-size);
     }
   }
-  
+  /* Add dark mode styles */
+.skills__content.dark-theme {
+    background-color: var(--container-color);
+    border-color: rgba(255, 255, 255, 0.1);
+  }

@@ -10,10 +10,11 @@ import Project from "./components/project/Project";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import { ThemeProvider } from "./ThemeContext";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <main className="main">
         <Home />
@@ -24,10 +25,9 @@ function App() {
         <Project />
         <Contact />
       </main>
-
       <Footer />
       <ScrollUp />
-    </>
+    </ThemeProvider>
   );
 }
 

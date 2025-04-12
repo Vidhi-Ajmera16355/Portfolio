@@ -7,8 +7,8 @@
 .services__content{
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgb(194, 215, 210);
-    /* background-color: var(--container-color); */
+    /* background-color: rgb(194, 215, 210); */
+    background-color: var(--container-color);
     padding: 6rem 0 2rem 2.5rem;
 }
 
@@ -150,4 +150,16 @@
        padding-right: 6rem; 
     }
   }
+  /* Add dark mode styles */
+.services__content.dark-theme {
+    background-color: var(--container-color);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
   
+  .services__modal.dark-theme {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .services__modal-content.dark-theme {
+    background-color: var(--container-color);
+  }
