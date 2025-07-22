@@ -9,7 +9,7 @@ const Info = () => {
                 <h3 className="about__title">
                     Experience
                 </h3>
-                <span className="about__subtitle">Novice</span>
+                <span className="about__subtitle">Interned at more than 3 organizations!!</span>
             </div>
             <div className="about__box">
                 <i className="bx bx-briefcase-alt about__icon">

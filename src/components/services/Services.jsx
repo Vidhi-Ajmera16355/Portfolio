@@ -120,15 +120,14 @@ const Services = () => {
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle"></i>
                                     <p className="services__modal-info">
-                                        Solved 500+ problems on coding platforms like LeetCode, HackerRank, CodeForces.
+                                        Solved 700+ problems on coding platforms like LeetCode, HackerRank, CodeForces.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
                                     <i className="uil uil-check-circle"></i>
                                     <p className="services__modal-info">
-                                        I develop a chat application brushing up my MERN stack skills.
-                                    </p>
+                                        Learned Kafka (messaging queue) during my internship at Goldman Sachs.                                    </p>
                                 </li>
                             </ul>
                         </div>

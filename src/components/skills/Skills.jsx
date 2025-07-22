@@ -16,6 +16,7 @@ const Skills = () => {
             </span>
 
             <div className="skills__container container grid">
+                
                 <Frontend />
                 <Backend />
                 <ML />

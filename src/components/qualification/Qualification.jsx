@@ -134,6 +134,36 @@ const Qualification = () => {
                         toggleState === 2 ? "qualification__content qualification__content-active" :
                             "qualification__content"
                     }>
+
+                             <div className="qualification__data">
+
+                            <div>
+
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+
+                            <div>
+                                <h3 className="qualification__title">Goldman Sachs Summer Intern</h3>
+
+                                <span className="qualification__subtitle">
+                                    Bangalore
+                                </span>
+
+
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2025 (May - July)
+                                </div>
+                            </div>
+
+                        </div>
+
+
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Full Stack Web Development</h3>
@@ -199,6 +229,7 @@ const Qualification = () => {
                                     <i className="uil uil-calendar-alt"></i>
                                     2024 (May-July)
                                 </div>
+                                
                             </div>
 
 
@@ -207,7 +238,58 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                         </div>
+
+                                                    <div className="qualification__data">
+
+                            <div>
+
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+
+                            <div>
+                                <h3 className="qualification__title">Business Analyst Course</h3>
+
+                                <span className="qualification__subtitle">
+                                    Udemy
+                                </span>
+
+
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2025 
+                                </div>
+                            </div>
+
+                        </div>
+  <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Backend Developer Intern</h3>
+
+                                <span className="qualification__subtitle">
+                                    Meridian Solutions
+                                </span>
+
+
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2025 (Jan - May)
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
+
                     </div>
+
 
 
                 </div>
